@@ -34,7 +34,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/buefy
     'nuxt-buefy',
-    '@nuxtjs/composition-api/module'
+    '@nuxtjs/composition-api/module',
+    '@pinia/nuxt',
 
   ],
 

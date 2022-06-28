@@ -1,22 +1,35 @@
 <template>
   <div>
-<the-navbar/>
+    <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
 
-<Nuxt />
-
+    <nuxt/>
   </div>
 </template>
 
 <script>
-import TheNavbar from '../components/Navigation/TheNavbar.vue'
+import TheHeader from '@/components/Navigation/TheHeader'
+
 
 export default {
-  components: {TheNavbar  },
-  name: 'DefaultLayout',
+  components: {
+    TheHeader,
+
+  },
   data() {
     return {
-
+      displaySidenav: false
     }
-  },
+  }
 }
 </script>
+
+
+<style scoped>
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+</style>
