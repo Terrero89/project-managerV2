@@ -1,7 +1,7 @@
 <template>
   <section class="main-card">
     <div class="inner-card">
-    
+
     </div>
   </section>
 </template>

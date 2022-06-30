@@ -4,13 +4,10 @@ html
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
- 
+  font-family: 'Roboto', sans-serif;
 }
 
-<<<<<<< Updated upstream
 
 *{
-  /* border: solid red 1px; */
+  border:solid blue 1px;
 }
-=======
->>>>>>> Stashed changes

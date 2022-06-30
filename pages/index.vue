@@ -5,13 +5,17 @@
         <div class="hero-flex">
 
             <div class="hero-text">
-                <h1>The Project Management App</h1>
+                <h1>Project Management App</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus, harum ea voluptatibus ad nemo quidem consectetur adipisicing elit.
                     Accusamus, harum ea voluptatibus ad nemo quidem?</p>
+
+                <b-button type="is-primary">Primary</b-button>
+                <b-button type="is-primary" >Primary</b-button>
 
             </div>
 
-            <div class="hero-image">
+            <div class="hero-shape">
 
                 <div class="circle"></div>
 
@@ -23,7 +27,7 @@
 </div>
 </template>
 
-<script>
+<script setup>
 import {
     useStore
 } from '@/store/counter'
@@ -32,35 +36,63 @@ import {
 } from "@nuxtjs/composition-api"
 
 const store = useStore()
-
-const name = ref("Sergio Terrero")
-const title = ref("Composition API is working")
+store;
 </script>
 
 <style scoped>
 .hero-flex {
-      flex-direction: row;
+    flex-direction: row;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: auto 0;
+    flex-wrap: wrap;
 }
 
 .hero {
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(250, 250, 250);
     min-height: 90vh;
-
 
 }
 
-.fa-solid .fa-bars-filter {
-    background: blue;
-    font-size: 3rem;
+.hero-text {
+    /* border: solid rgb(0, 38, 255) 1px; */
+    padding: 2rem;
+
+    /* margin: 0 0 5rem 0; */
+
+}
+
+.hero-text h1 {
+    padding: 0 1.5rem;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1.7rem;
+}
+
+.hero-text p {
+    padding: 0 1.5rem;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    max-width: 38rem;
+}
+
+.hero-shape {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+
+    border: solid red 1px;
+
 }
 
 .circle {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
     width: 10rem;
     height: 10rem;
+    border-radius: 50%;
     border: solid red 1px;
 }
 </style>
