@@ -1,56 +1,66 @@
 <template>
-  <div class="home-page">
-    <div class="page-hero">
-      <h1>Welcome back {{ name }}!</h1>
-      <card
-        class="home-button"
-        url="https://images.unsplash.com/photo-1652992714070-4b1c488ec7cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-        title="Home"
-        description="Welcome to my page"
-        >Home</card
-      >
+<div class="hero-section">
+    <div class="hero">
 
-      <card
-        class="home-button"
-        url="https://images.unsplash.com/photo-1652992714070-4b1c488ec7cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-        title="Home"
-        description="Welcome to my page"
-        >Home</card
-      >
-      <card
-        class="home-button"
-        url="https://images.unsplash.com/photo-1652992714070-4b1c488ec7cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-        title="Home"
-        description="Welcome to my page"
-        >Home</card
-      >
+        <div class="hero-flex">
+
+            <div class="hero-text">
+                <h1>The Project Management App</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus, harum ea voluptatibus ad nemo quidem?</p>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="circle"></div>
+
+            </div>
+        </div>
+
     </div>
-  </div>
+
+</div>
 </template>
 
-<script setup>
-import { useStore } from '@/store/counter'
-import { ref } from '@nuxtjs/composition-api'
+<script>
+import {
+    useStore
+} from '@/store/counter'
+import {
+    ref
+} from "@nuxtjs/composition-api"
 
 const store = useStore()
 
-const name = ref('Sergio Terrero')
-const title = ref('Composition API is working')
+const name = ref("Sergio Terrero")
+const title = ref("Composition API is working")
 </script>
 
 <style scoped>
-.home-page {
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  display: flex;
-  justify-content: center;
+.hero-flex {
+      flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto 0;
+}
+
+.hero {
+    background-color: rgb(209, 209, 209);
+    min-height: 90vh;
+
 
 }
 
-.page-hero {
-  font-size: 1.5rem;
-  padding-top: 5rem;
-  margin: 4rem 0;
+.fa-solid .fa-bars-filter {
+    background: blue;
+    font-size: 3rem;
+}
+
+.circle {
+    width: 10rem;
+    height: 10rem;
+    border: solid red 1px;
 }
 </style>

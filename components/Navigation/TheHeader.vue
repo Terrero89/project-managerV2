@@ -54,10 +54,6 @@ export default {
 </script>
 
 <style scoped>
-.fa-list-dropdown {
-    color: red;
-    font-size: 1rem;
-}
 
 .nav-icon {
     margin: 0 1rem
@@ -84,13 +80,14 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
 .logo {
-    margin: 0 10px;
-    font-size: 1.3rem;
+    
+    font-size: 1.5rem;
 }
 
 .logo a {
     text-decoration: none;
     color: white;
+
 }
 
 .spacer {
@@ -127,6 +124,7 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 .nav-item a {
     text-decoration: none;
     color: white;
+      font-size: 1.2rem;
 }
 
 .nav-item a:hover,

@@ -5,17 +5,11 @@
 
 
 <div>
-  <ul class="items" v-for="items in store.loadedList" :key="store.projects.id">
+  <ul class="items" v-for="items in store.loadedList" :key="items.id">
       <li> {{items.projectType}}</li>
       <div v-for="task in items.tasks" :key="task.taskName">
         <li > {{task.taskName}}</li>
       </div>
-
-
-
-
-
-
   </ul>
 </div>
 
