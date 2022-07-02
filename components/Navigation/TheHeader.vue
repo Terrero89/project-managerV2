@@ -13,7 +13,7 @@
                     <nuxt-link to="/home">Home</nuxt-link>
                 </li>
                 <li class="nav-item">
-                    <nuxt-link to="/projects">Projects</nuxt-link>
+                    <nuxt-link to="/home/projects">Projects</nuxt-link>
                 </li>
                 <li class="nav-item">
                     <nuxt-link to="/dashboard">Dashboard</nuxt-link>
@@ -21,18 +21,16 @@
             </ul>
         </div>
         <div class="nav-icons">
-            <nuxt-link class="nav-icon" to="/home">
-                <b-icon icon="home" size="is-" type="is-light">
-                </b-icon>
+            <nuxt-link class="nav-icon" to="/">
+               icon3
             </nuxt-link>
 
-            <nuxt-link class="nav-icon" to="/projects">
-                <b-icon icon="apps" size="is-" type="is-light">
-                </b-icon>
+            <nuxt-link class="nav-icon" to="/home/projects">
+              icon2
             </nuxt-link>
-            <nuxt-link class="nav-icon" to="dashboard">
-                <b-icon icon="view-dashboard" size="is-" type="is-light">
-                </b-icon>
+            <nuxt-link class="nav-icon" to="/dashboard">
+                Icon1
+
 
             </nuxt-link>
 
@@ -65,7 +63,7 @@ export default {
 
 .the-header {
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     height: 50px;
     display: flex;
     justify-content: space-around;
@@ -80,7 +78,7 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
 .logo {
-    
+
     font-size: 1.5rem;
 }
 

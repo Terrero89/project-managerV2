@@ -1,3 +1,4 @@
+
 <template>
   <div>
     <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
@@ -8,12 +9,9 @@
 
 <script>
 import TheHeader from '@/components/Navigation/TheHeader'
-
-
 export default {
   components: {
     TheHeader,
-
   },
   data() {
     return {
@@ -28,7 +26,6 @@ export default {
 html {
   font-family: 'Open Sans', sans-serif;
 }
-
 body {
   margin: 0;
 }

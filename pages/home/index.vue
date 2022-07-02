@@ -1,24 +1,82 @@
 <template>
-  <div class="home-page">
-    <!-- Colum one -->
-    <div class="container">
-      <div class="notification is-primary">
-        <div class="columns is-desktop is-mobile"></div>
-      </div>
-    </div>
-  </div>
+<div class="card">
+
+    <UIMainCard>
+    title or header
+    </UIMainCard>
+
+    <UIMainCard>
+
+        <UICard class="flexi">
+          <div class="wrapper">
+              <h1>Complete Projects</h1>
+             <h1>25%</h1>
+          </div>
+
+        </UICard>
+
+           <UICard class="flexi">
+          <div class="wrapper">
+              <h1>Projects in Progress</h1>
+             <h1>75%</h1>
+          </div>
+
+        </UICard>
+
+        <UICard class="flexi">
+          <div class="wrapper">
+              <h1>Complete Projects</h1>
+             <h1>25%</h1>
+          </div>
+
+        </UICard>
+
+
+                <UICard class="flexi">
+          <div class="wrapper">
+              <h1>Complete Projects</h1>
+             <h1>25%</h1>
+          </div>
+
+        </UICard>
+
+           <UICard class="flexi">
+          <div class="wrapper">
+              <h1>Pending Projects</h1>
+             <h1>25%</h1>
+          </div>
+
+        </UICard>
+
+        <UICard class="flexi">
+          <div class="wrapper">
+              <h1>Complete Projects</h1>
+             <h1>25%</h1>
+          </div>
+
+        </UICard>
+
+            <UIMainCard>
+   another thing to add
+    </UIMainCard>
+
+    </UIMainCard>
+
+</div>
 </template>
 
-<script setup>
+<script>
+export default {
+    name: "HomePage",
+    components: {
 
-// import { useStore } from '@/store/counter'
-// import {ref} from "@nuxtjs/composition-api"
-
-// const store = useStore()
+    },
+}
 </script>
 
 <style scoped>
-.container {
-  margin: 25px auto;
+.flexi{
+  display: flex;
+  justify-content: center;
 }
 </style>

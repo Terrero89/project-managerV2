@@ -1,13 +1,18 @@
 html
 {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
 }
 
 
 *{
-  border:solid blue 1px;
+  /* border:solid rgb(0, 255, 13) 1px; */
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

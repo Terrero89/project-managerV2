@@ -7,12 +7,12 @@
 </template>
 
 <script>
-import Card from '~/components/Card'
+
 
 export default {
   name: 'TasksDetailPage',
   components: {
-    Card,
+ 
   },
 }
 </script>

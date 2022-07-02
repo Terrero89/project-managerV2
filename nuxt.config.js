@@ -12,7 +12,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Roboto&display=swap" }],
+    { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Roboto&display=swap"}],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -34,7 +34,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/buefy
-    'nuxt-buefy',
+   
     '@nuxtjs/composition-api/module',
     '@pinia/nuxt',
 

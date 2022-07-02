@@ -2,6 +2,7 @@
 <div class="hero-section">
     <div class="hero">
 
+
         <div class="hero-flex">
 
             <div class="hero-text">
@@ -10,9 +11,6 @@
                     Accusamus, harum ea voluptatibus ad nemo quidem consectetur adipisicing elit.
                     Accusamus, harum ea voluptatibus ad nemo quidem?</p>
 
-                <b-button type="is-primary">Primary</b-button>
-                <b-button type="is-primary" >Primary</b-button>
-
             </div>
 
             <div class="hero-shape">
@@ -20,11 +18,17 @@
                 <div class="circle"></div>
 
             </div>
+
         </div>
+
 
     </div>
 
+
 </div>
+
+
+
 </template>
 
 <script setup>
@@ -32,31 +36,37 @@ import {
     useStore
 } from '@/store/counter'
 import {
+
     ref
 } from "@nuxtjs/composition-api"
 
-const store = useStore()
-store;
+
 </script>
 
 <style scoped>
 .hero-flex {
-    flex-direction: row;
+    width: 1200px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: auto 0;
+    margin: 0 auto;
     flex-wrap: wrap;
+    /* border: solid rgb(0, 38, 255) 1px; */
+
 }
 
 .hero {
     background-color: rgb(250, 250, 250);
     min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+
+
 
 }
 
 .hero-text {
-    /* border: solid rgb(0, 38, 255) 1px; */
+    border: solid rgb(0, 38, 255) 1px;
     padding: 2rem;
 
     /* margin: 0 0 5rem 0; */
@@ -75,6 +85,7 @@ store;
     font-size: 1.3rem;
     line-height: 2.2rem;
     max-width: 38rem;
+    margin-bottom: 2.5rem;
 }
 
 .hero-shape {
