@@ -6,7 +6,7 @@
 </div>
 </template>
 
-<script>
+<script setup>
 import {
     useStore
 } from '@/store/counter'
@@ -23,7 +23,8 @@ import {
     border-radius: 5px;
     padding: 1rem;
     margin: .8rem;
-   width: 17rem;
+   min-width: 17rem;
+
 
 
 }

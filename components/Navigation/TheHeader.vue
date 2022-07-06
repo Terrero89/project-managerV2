@@ -13,7 +13,7 @@
                     <nuxt-link to="/home">Home</nuxt-link>
                 </li>
                 <li class="nav-item">
-                    <nuxt-link to="/home/projects">Projects</nuxt-link>
+                    <nuxt-link to="/projects">Projects</nuxt-link>
                 </li>
                 <li class="nav-item">
                     <nuxt-link to="/dashboard">Dashboard</nuxt-link>
@@ -25,7 +25,7 @@
                icon3
             </nuxt-link>
 
-            <nuxt-link class="nav-icon" to="/home/projects">
+            <nuxt-link class="nav-icon" to="/projects">
               icon2
             </nuxt-link>
             <nuxt-link class="nav-icon" to="/dashboard">

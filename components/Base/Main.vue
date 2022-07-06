@@ -1,11 +1,21 @@
 <template>
-<div class="card">
+<div class="container ">
+    <h1>Home page</h1>
+    <div class="notification is-light my-5 ">
 
-    <div class="card-box">
-          <slot></slot>
+        <div class="main-wrapper is-mobile is-tablet ">
+
+                  <!-- conternt for main card goes here/. -->
+             <slot></slot>
+
+
+
+
+
+
+        </div>
 
     </div>
-
 </div>
 </template>
 
@@ -36,8 +46,8 @@ justify-content:center;
 }
 
 .card-box{
-max-width:80rem;
-    border: dotted blue 1px;
+max-width:60rem;
+    /* border: dotted blue 1px; */
 margin: 1rem 0;
  border-radius: 10px;
   padding: 1rem;
@@ -47,7 +57,7 @@ margin: 1rem 0;
 
 flex-wrap: wrap;
 
-  max-width:70rem ;
+
 }
 
 </style>
