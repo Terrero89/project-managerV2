@@ -1,9 +1,13 @@
 <template>
-<div class="home-page">
- <h1>PROJECT DETAIL PAGE</h1>
- <p>WILL SHOW THE SPECIFIC INFORMATION FOR AN PROJECT BY ID</p>
 
-</div>
+  <BaseMain>
+
+    <ProjectDetail>
+
+    </ProjectDetail>
+
+
+  </BaseMain>
 </template>
 
 <script>
