@@ -1,57 +1,88 @@
 <template>
-  <div class="flex-items tile is-child ">
-    <!-- options filter-->
-    <div class=" item select is-medium is-dark">
-      <select value="Status">
-        <option>Sort By</option>
-        <option>Status</option>
-        <option>Complete</option>
-        <option>In Progress</option>
-        <option>Pending</option>
-      </select>
+<div class="is-ancestor box">
+    <div class="filters flexi ">
+
+        <div class="select is-medium mr-5">
+            <select class="is-hovered ">
+                <option>Select dropdown</option>
+                <option>With options</option>
+                <option>Select dropdown</option>
+                <option>With options</option>
+                <option>Select dropdown</option>
+                <option>With options</option>
+            </select>
+        </div>
+
+        <div class="select is-medium multiple">
+            <select class="is-hovered">
+                <option>Select dropdown</option>
+                <option>With options</option>
+                <option>Select dropdown</option>
+                <option>With options</option>
+                <option>Select dropdown</option>
+                <option>With options</option>
+            </select>
+        </div>
+
+        <div class="is-parent is-8 is-mobile ml-auto">
+
+            <nuxt-link :to="projectsRoute">  <b-button class="is-medium is-primary">Create Project +</b-button></nuxt-link>
+        </div>
+
     </div>
 
-    <div class=" item select is-medium is-dark ">
-      <select>
-        <option>Sort By</option>
-        <option>Oldest</option>
-        <option>Newest</option>
-      </select>
-    </div>
-    <div class=" ml-auto">
-      <input class="button mr-auto is-link is-medium" type="submit" value="Create Project " />
-
-    </div>
-  </div>
+</div>
 </template>
+
+
+<script setup>
+import { useProjectStore } from '@/store/projects'
+
+import { ref, computed, useRouter, useRoute } from "@nuxtjs/composition-api"
+const props = defineProps([]
+);
+const currDate = ref(Date())
+
+
+const store = useProjectStore();
+
+const projectsLoaded = computed(() => store.projectList) //project list from pinia
+const router = useRouter()
+const route = useRoute()
+const projectsRoute = computed(() => "/create-project")
+
+</script>
 
 <style scoped>
 .flex-items {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
 
 .item {
 
-  margin: 0 1rem;
+    margin: 0 1rem;
+}
+
+.flexi {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width:450px) {
-  .flex-items {
+    .flex-items {
 
+        display: inline;
+        ;
 
+    }
 
-    display: inline;
-    ;
+    .item {
 
-  }
-
-  .item {
-
-  margin: 0 0rem;
-}
+        margin: 0 0rem;
+    }
 
 }
 </style>

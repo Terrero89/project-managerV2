@@ -1,20 +1,18 @@
+
+
 <template>
 <div></div>
-
 </template>
 
 <script setup>
 import { useProjectStore } from '@/store/projects'
-import {useRoute, useRouter } from "@nuxtjs/composition-api"
+import {  useRoute, useRouter} from "@nuxtjs/composition-api"
 
-const props = defineProps(['id', 'projectType', 'status', 'age', 'duration', 'startDate', 'endDate'])
-
+const props = defineProps()
 const store = useProjectStore();
 const route = useRoute()
 const router = useRouter()
 // const projects = computed(() => store.projectList) //project list from pinia
-// projects;
-
 
 </script>
 
@@ -38,3 +36,14 @@ p {
   font-size: 1.5rem;
 }
 </style>
+
+
+<script setup >
+import { useProjectStore } from '@/store/projects'
+
+import { computed} from "@nuxtjs/composition-api"
+
+const store = useProjectStore();
+const projectsLoaded = computed(() =>  store.projectList) //project list from pinia
+
+</script>

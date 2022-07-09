@@ -1,6 +1,6 @@
 <template>
 <div class="container ">
-    <h1>Home page</h1>
+ 
     <div class="notification is-light my-5 ">
 
         <div class="main-wrapper is-mobile is-tablet ">
