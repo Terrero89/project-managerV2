@@ -17,8 +17,12 @@
             <div class="control">
               <div class="select is-medium">
                 <select>
-                  <option>Select dropdown</option>
-                  <option>With options</option>
+                  <option>Web Development</option>
+                    <option>Frontend</option>
+                     <option>Backend</option>
+                      <option>C</option>
+                      <option>Python </option>
+                  <option>Tutorials</option>
                 </select>
               </div>
             </div>
@@ -52,6 +56,25 @@
 
         <div class="technologies box">
           <label class="checkbox">
+            <input type="checkbox">
+            HTML
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox">
+            Boostrap
+          </label>
+           <label class="checkbox">
+            <input type="checkbox">
+           CSS
+          </label>
+
+           <label class="checkbox">
+            <input type="checkbox">
+            Javascript
+          </label>
+
+           <label class="checkbox">
             <input type="checkbox">
             React Js
           </label>
@@ -91,7 +114,7 @@
         </div>
 
 
-        <button class="button is-link large"> Submit</button>
+        <button class="button is-link my-5 large"> Submit</button>
 
       </div>
 
