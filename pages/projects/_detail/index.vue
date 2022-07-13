@@ -1,7 +1,17 @@
 
-
 <template>
-<div></div>
+<div>
+<div>
+    DETAIL OF SPECIFIC PROJECT
+</div>
+
+
+<div>
+<p>tasks section (drop down hide option)</p>
+<p>go to specific task---> OR SHOW ME ALL THE TASK FOR THIS ID</p>
+</div>
+
+</div>
 </template>
 
 <script setup>

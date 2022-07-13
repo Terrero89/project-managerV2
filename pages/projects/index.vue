@@ -7,6 +7,7 @@
         <div class="tile is-child">
           <ProjectList />
 
+
         </div>
       </div>
       <div class="tile is-4 is-vertical is-parent">
@@ -27,7 +28,6 @@
 import {
   useProjectStore
 } from '@/store/projects'
-
 import {
   ref,
   computed,

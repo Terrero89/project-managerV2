@@ -1,11 +1,11 @@
 <template>
   <div class="project box">
     <div class="project-text">
+      <p>{{props.id}}</p>
       <h1>{{props.projectType}}</h1>
       <h2>{{props.description}}</h2>
       <p>{{props.duration}}</p>
-      <p>{{props.startDate}}</p>
-      <p>{{props.endDate}}</p>
+
     </div>
 
     <div class="buttons ">

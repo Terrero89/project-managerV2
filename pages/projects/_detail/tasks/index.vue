@@ -1,7 +1,7 @@
 <template>
 <div class="home-page">
- <h1>TASK LIST PAGE</h1>
- <p>WILL SHOW THE LIST OF THE PROJECT WITH TASKS</p>
+  <!-- here will have all the tasks from an specific  -->
+<TaskList></TaskList>
 
 </div>
 </template>
