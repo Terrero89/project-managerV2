@@ -1,45 +1,50 @@
 <template>
   <div class="project box">
     <div class="project-text">
-      <p>{{props.id}}</p>
-      <h1>{{props.projectType}}</h1>
-      <h2>{{props.description}}</h2>
-      <p>{{props.duration}}</p>
+       <p>id {{ props.id }}</p>
+      <h1>Project:{{ props.projectType }}</h1>
+      <h2>Description: {{ props.description }}</h2>
+      <p>Age: {{ props.age }} days</p>
+      <p>Duration: {{ props.duration }} hours</p>
 
     </div>
 
-    <div class="buttons ">
-      <button> {{props.isComplete}} Progress</button>
+    <div class="buttons">
+      <button>{{ props.status }} Progress</button>
       <!-- this nuxt link will create the link to to specific id  -->
-<!-- prop will be identifier to route the click in details from the projects component. -->
-      <nuxt-link :to="'projects/' + props.id"> <button> details</button> </nuxt-link>
-      <button> delete</button>
+      <!-- prop will be identifier to route the click in details from the projects component. -->
+      <nuxt-link :to="'/projects/' + props.id">
+        <button>details</button>
+      </nuxt-link>
+      <button>delete</button>
     </div>
   </div>
-
-
-
-
 </template>
 
 <script setup>
 import { useProjectStore } from '@/store/projects'
 
-import { ref, computed, useRouter, useRoute } from "@nuxtjs/composition-api"
-const props = defineProps(['id','projectType', 'description', 'duration', 'age','startDate','endDate', 'isComplete']
-);
+import { ref, computed, useRouter, useRoute } from '@nuxtjs/composition-api'
+const props = defineProps([
+  'id',
+  'projectType',
+  'description',
+  'duration',
+  'age',
+  'startDate',
+  'endDate',
+  'status',
+  'projects',
+
+])
 const currDate = ref(Date())
 
-
-const store = useProjectStore();
+const store = useProjectStore()
+const isRequired = ref(true)
 
 const projectsLoaded = computed(() => store.projectList) //project list from pinia
 const router = useRouter()
 const route = useRoute()
-
-
-
-
 </script>
 
 <style scoped>

@@ -1,28 +1,37 @@
-
 <template>
-<div>
-<div>
-    DETAIL OF SPECIFIC PROJECT
-</div>
+  <div>
+    <!-- PROJECTS DETAIL -->
+    <div>DETAIL OF SPECIFIC PROJECT</div>
 
+    <div>
+      <p>tasks section (drop down hide option)</p>
+      <p>go to specific task---> OR SHOW ME ALL THE TASK FOR THIS ID</p>
+    </div>
 
-<div>
-<p>tasks section (drop down hide option)</p>
-<p>go to specific task---> OR SHOW ME ALL THE TASK FOR THIS ID</p>
-</div>
-
-</div>
+    <ProjectDetail
+    v-for="project in store.projectList" :key="project.id"
+      :id="project.id"
+      :project-type="project.projectType"
+      :description="project.description"
+      :age="project.age"
+      :duration="project.duration"
+      :startDate="project.startDate"
+      :endDate="project.endDate"
+      :status="project.isComplete"
+    />
+  </div>
 </template>
 
 <script setup>
 import { useProjectStore } from '@/store/projects'
-import {  useRoute, useRouter} from "@nuxtjs/composition-api"
+import { useRoute, useRouter } from '@nuxtjs/composition-api'
 
 const props = defineProps()
-const store = useProjectStore();
+const store = useProjectStore()
 const route = useRoute()
 const router = useRouter()
-// const projects = computed(() => store.projectList) //project list from pinia
+// const projectList = computed(() => store.projectList) //project list from pinia
+
 
 </script>
 
@@ -34,7 +43,6 @@ const router = useRouter()
 
 .project-detail {
   text-align: center;
-
 }
 
 .project-detail h2,
@@ -47,13 +55,11 @@ p {
 }
 </style>
 
-
-<script setup >
+<script setup>
 import { useProjectStore } from '@/store/projects'
 
-import { computed} from "@nuxtjs/composition-api"
+import { computed } from '@nuxtjs/composition-api'
 
-const store = useProjectStore();
-const projectsLoaded = computed(() =>  store.projectList) //project list from pinia
-
+const store = useProjectStore()
+const projectsLoaded = computed(() => store.projectList) //project list from pinia
 </script>

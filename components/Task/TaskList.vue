@@ -3,7 +3,7 @@
   <div>
        <div class="task-parent">
         <!-- finding the parent title. find title that is equal to the title id, with the same id of title -->
-        <p>parent project</p>
+        <p>Project ID XXXX</p>
         <p>parent project title</p>
         <p>PROJECT NAME THAT THESE TAS ARE UNDER</p>
       </div>
@@ -20,40 +20,18 @@
     />
 
         <TaskPreview
-      id="1"
+      id="2"
        taskName="Hero Section"
       description="Building website for Joe Camargo with react, Next etc.."
       startDate="07/15/2022"
       endDate=""
-      age="3"
+      age="6"
       duration="6"
       status="In progress"
 
     />
 
-       <TaskPreview
-      id="2"
-      taskName="Hero section refactoring"
-      description="Building website for Joe Camargo with react, Next etc.."
-      startDate="07/15/2022"
-      endDate="07/18/2022"
-      age="3"
-      duration="6"
-      status="complete"
 
-    />
-
-       <TaskPreview
-      id="3"
-       taskName="About me page"
-      description="Building website for Joe Camargo with react, Next etc.."
-      startDate="07/15/2022"
-      endDate="07/18/2022"
-      age="3"
-      duration="6"
-      status="complete"
-
-    />
   </div>
 
  </BaseMain>

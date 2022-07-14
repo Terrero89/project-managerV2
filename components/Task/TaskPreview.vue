@@ -7,9 +7,10 @@
           <p>Project: {{ props.taskName }}</p>
           <p>Description: {{ props.description }}</p>
           <p>Task Age: {{ props.age }} days</p>
+          <p>Duration: {{ props.duration }} hours</p>
           <p>Start Date: {{ props.startDate }}</p>
           <p>End Date:{{ props.endDate }}</p>
-          <p>Duration: {{ props.duration }} hours</p>
+
           <p>{{ props.status }}</p>
 
           <div class="controls">
@@ -17,7 +18,7 @@
             <nuxt-link :to="'tasks/' + props.id">
               <button>details</button>
             </nuxt-link>
-             <nuxt-link :to="'tasks/' + props.id">
+            <nuxt-link :to="'tasks/' + props.id">
               <button>Tasks</button>
             </nuxt-link>
           </div>
@@ -40,6 +41,7 @@ const props = defineProps([
   'duration',
   'startDate',
   'endDate',
+  'projects'
 ])
 
 const store = useProjectStore()
