@@ -26,6 +26,8 @@
 import { useProjectStore } from '@/store/projects'
 
 import { ref, computed, useRouter, useRoute } from '@nuxtjs/composition-api'
+
+const props = defineProps(['projects'])
 const store = useProjectStore()
 
 const projectList = computed(() => store.projectList) //project list from pinia

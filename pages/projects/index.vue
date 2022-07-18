@@ -5,10 +5,11 @@
       <div class="tile is-parent">
         <div class="tile is-child">
           <!-- project sections main screen -->
-          <ProjectList />
+          <ProjectList :projects="projectsLoaded"/>
         </div>
       </div>
       <div class="tile is-4 is-vertical is-parent">
+        
         <div class="tile is-child box">
           <p class="title">Action List</p>
           <p>side for actions</p>
@@ -21,7 +22,8 @@
 <script setup>
 import { useProjectStore } from '@/store/projects'
 import { ref, computed, useRouter, useRoute } from '@nuxtjs/composition-api'
-
+const store = useProjectStore()
+const projectsLoaded = store.ProjectList //projects coming from p
 // const props = defineProps([])
 
 
